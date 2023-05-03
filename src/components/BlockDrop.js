@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import "./BlockDrop.css";
+import { useNavigate } from "react-router-dom";
 
 function BlockDrop({numberOfBlock,blockDrop,player1Turn,handleTurnChange}){
 
     const length = numberOfBlock*4*20;
-
+    
+    const[remainingBlock, setRemainingBlock] = useState(numberOfBlock);
     const [count1,setCount1] = useState(0);
     const [count2,setCount2] = useState(0);
+
+    const navigate = useNavigate();
 
     const handleDragOver = (event) => {
       event.preventDefault();
@@ -19,13 +23,27 @@ function BlockDrop({numberOfBlock,blockDrop,player1Turn,handleTurnChange}){
       else if (count2>=count1 && !player1Turn){
         handleTurnChange();
       }
-    },[count1,count2]);
+
+      if(remainingBlock === 0){
+        if(count1 === count2){
+          navigate("/Result/" + "It was a Draw");
+        }
+        else if (count1 > count2){
+          navigate("/Result/" + "Player1 Won");
+        }
+        else{
+          navigate("/Result/" + "Player 2 Won");
+        }
+      }
+    },[count1,count2,remainingBlock]);
+
 
     const handleDrop = (event) => {
       event.preventDefault();
       if(event.target.className === "player1bar" && player1Turn){
         event.target.appendChild(blockDrop);
         setCount1(count1 + Number(blockDrop.getAttribute("value")));
+        setRemainingBlock(remainingBlock - 1);
       }
       else if (event.target.className === "player2bar" && player1Turn){
         alert("It is player 1 turn right now");
@@ -33,6 +51,7 @@ function BlockDrop({numberOfBlock,blockDrop,player1Turn,handleTurnChange}){
       if(event.target.className === "player2bar" && !player1Turn){
         event.target.appendChild(blockDrop);
         setCount2(count2 +  Number(blockDrop.getAttribute("value")));
+        setRemainingBlock(remainingBlock - 1);
       }
       else if(event.target.className === "player1bar" && !player1Turn){
         alert("It is player 2 turn right now");

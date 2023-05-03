@@ -22,8 +22,8 @@ function Login(){
 
     return(
         <div className="login">
-            <p>Please enter the amount of block you want to play (number between 5 and 8)</p>
-            <input type="number" min={5} max={8} onChange={handleChange}></input>
+            <h1>Please enter the amount of block you want to play (number between 5 and 8)</h1>
+            <input type="number" onChange={handleChange}></input>
             <button onClick={handleClick}>Play!</button>
         </div>
     );
