@@ -10,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path = '/' element={<Login></Login>}></Route>
+        <Route exact path = '/catch-up-festival' element={<Login></Login>}></Route>
         <Route path = '/GameBoard/:blockNumber' element = {<GameBoard></GameBoard>}></Route>
         <Route path= '/Result/:result' element={<Result></Result>}></Route>
       </Routes>
