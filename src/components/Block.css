@@ -1,0 +1,7 @@
+.block{
+    display: flex;
+    border: 1px solid black;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+}

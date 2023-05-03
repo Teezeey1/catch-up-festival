@@ -1,0 +1,15 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+input{
+    width: 10%;
+}
+
+button{
+    margin-top: 20px;
+}

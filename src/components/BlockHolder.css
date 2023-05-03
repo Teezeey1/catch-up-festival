@@ -1,0 +1,12 @@
+.blockHolder{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 30%;
+    align-items: center;
+}
+
+.container{
+    height: 80%;
+    width: 100%;
+}
