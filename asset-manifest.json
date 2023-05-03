@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/catch-up-festival/static/css/main.af57c12b.css",
-    "main.js": "/catch-up-festival/static/js/main.7e0be3b4.js",
+    "main.js": "/catch-up-festival/static/js/main.b0999f0d.js",
     "static/js/787.7835b86a.chunk.js": "/catch-up-festival/static/js/787.7835b86a.chunk.js",
     "index.html": "/catch-up-festival/index.html",
     "main.af57c12b.css.map": "/catch-up-festival/static/css/main.af57c12b.css.map",
-    "main.7e0be3b4.js.map": "/catch-up-festival/static/js/main.7e0be3b4.js.map",
+    "main.b0999f0d.js.map": "/catch-up-festival/static/js/main.b0999f0d.js.map",
     "787.7835b86a.chunk.js.map": "/catch-up-festival/static/js/787.7835b86a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af57c12b.css",
-    "static/js/main.7e0be3b4.js"
+    "static/js/main.b0999f0d.js"
   ]
 }
