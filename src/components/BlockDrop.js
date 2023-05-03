@@ -17,7 +17,7 @@ function BlockDrop({numberOfBlock,blockDrop,player1Turn,handleTurnChange}){
     };
 
     const startOver = ()=>{
-      navigate("/");
+      navigate('/catch-up-festival');
     }
 
     useEffect(()=>{

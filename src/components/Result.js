@@ -5,7 +5,7 @@ function Result(){
     const navigate = useNavigate();
     const{result} = useParams();
     const handleClick = ()=>{
-        navigate("/");
+        navigate('/catch-up-festival');
     }
 
     return(
