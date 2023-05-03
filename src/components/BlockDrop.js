@@ -16,6 +16,10 @@ function BlockDrop({numberOfBlock,blockDrop,player1Turn,handleTurnChange}){
       event.preventDefault();
     };
 
+    const startOver = ()=>{
+      navigate("/");
+    }
+
     useEffect(()=>{
       if(count1>=count2 && player1Turn && count1!== 0){
         handleTurnChange();
@@ -73,6 +77,9 @@ function BlockDrop({numberOfBlock,blockDrop,player1Turn,handleTurnChange}){
                  onDrop={handleDrop}>
             </div>
             <p>sum: {count2}</p>
+        </div>
+        <div className="buttonPosition"> 
+          <button onClick={startOver}>Start Over</button>
         </div>
     </div>
     );

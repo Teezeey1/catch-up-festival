@@ -31,3 +31,13 @@
     height: 38px;
     display: flex;
 }
+
+button{
+   width: 15%;
+}
+
+.buttonPosition{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
