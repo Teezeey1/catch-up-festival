@@ -14,6 +14,10 @@ function Block({numberOfBlock,getBlock}){
         6:"darkgreen",
         7:"gray",
         8:"brown",
+        9:"purple",
+        10:"lightblue",
+        11:"blue",
+        12:"orange"
     }
 
   

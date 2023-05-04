@@ -14,3 +14,28 @@ input{
 button{
     margin-top: 20px;
 }
+
+.rule{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20%;
+}
+
+.loginHeader{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    flex-direction: column;
+    background: linear-gradient(lightgreen,lightblue);
+    width: 100%;
+}
